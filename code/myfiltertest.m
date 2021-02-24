@@ -33,3 +33,10 @@ hold on
 plot(samt,filtSig)
 xlim([0,2])
 ylim([-15,15])
+
+figure;
+plot(samt,filtSig)
+hold on
+plot(samt, As(2)*sin(2*pi*samt*fs(2)))
+xlim([0,0.3])
+ylim([-15,15])
